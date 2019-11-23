@@ -12,7 +12,7 @@ class Config:
     MAIL_PASSWORD = os.environ.get("MAIL_PASSWORD")
     SUBJECT_PREFIX = 'PITCH'
     SENDER_EMAIL = 'samuelangienda1998@gmail.com'
-    SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://moringa:tynashee452@localhost/pitchcave'
+    SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://moringa:motivation@localhost/pitchcave'
     WTF_CSRF_ENABLED = False
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
