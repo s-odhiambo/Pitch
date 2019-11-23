@@ -25,4 +25,12 @@ class RegistrationForm(FlaskForm):
     def validate_username(self,data_field):
         if User.query.filter_by(username = data_field.data).first():
             raise ValidationError('username is not available')
+          
+          
+          
+class LoginForm(FlaskForm):
+  email = StringField('Enter your email Address',validators = [Required(),Email()])
+  password = PasswordField('enter your password',validators = [Required()])
+  remember = BooleanField('Remember me')
+  submit = SubmitField('Sign In')          
 
