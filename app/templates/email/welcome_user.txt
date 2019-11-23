@@ -1,0 +1,3 @@
+Hello, {{user.username}}
+Welcome to Pitch
+We have just seen you have signed up on our application and want to welcome you. Please post your best pitches and also get to vite on other pitches.
