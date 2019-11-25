@@ -1,21 +1,21 @@
-  PITCH
+   ### PITCH
   
-  Author
-  s-odhiambo
+  ## Author
+   s-odhiambo
  
-  Description 
+   ## Description 
   
    This is python web based application that allows you to post your ideas and let people see.The user isable to   view other    posted content and vote on them
 
-  Link to Live Site
+   Link to Live Site
   
    Live site
-   Description
+   ## Description
    
    This is an application that allows a user to create a pitch depending on a certain category and add pitch    content. A      user can also be able to comment and vote on another user's pitches.
 
   
-  Installation Requirements
+   ## Installation Requirements
   
    Clone this repository and navigate to the folder. Run the following commands to allow functionality of the  app:-
 
@@ -27,7 +27,7 @@
    source virtual/bin/activate
    pip install -r requirements.txt
    
-   BDD
+   ## BDD
    
    Sign up in i.e enter email,username and password
    Go to login page and log in.
@@ -36,7 +36,7 @@
    Comment on any pitch
    downvote or upvote any pitch
    
-   User Stories
+   ## User Stories
    
    A user creates an account then logs into the web app
    A user can see the pitches posted by other people
@@ -44,7 +44,7 @@
    A user can add comment on the different pitches .
    A user can view and submit pitches by category.
    
-   Technologies Used
+   ## Technologies Used
    
    Python 3.6.
    HTML5, CSS && Bootstrap
@@ -53,8 +53,8 @@
    Heroku
    
 
-  License
+  ## License
   MIT License Copyright (c) 2019 s-odhiambo
 
-  Collaborate
+  ## Collaborate
   Send me an email to collaborate on the project.
