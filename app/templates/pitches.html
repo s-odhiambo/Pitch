@@ -9,17 +9,17 @@ include 'navbar.html'%} {% block content %}
 
 <div class="container">
   <div class="row">
-    <div class="jumbotron" style="background-color:green;">
+    <div class="jumbotron" style="background-color:green; font-family:'Roboto Condensed', sans-serif; color: whitesmoke;">
       {{wtf.quick_form(form)}}
-      <ul style="list-style: none;">
+      <ul style="list-style: none; font-family:'Roboto Condensed', sans-serif; color: whitesmoke;">
         {% for pitch in pitches %}
         <div class="list-group">
           <a href="#">
             <div class="list-item">
-              <h2>{{pitch.id}}</h2>
+              <h2 style="font-family:'Roboto Condensed', sans-serif;">{{pitch.id}}</h2>
             </div>
-            <p>{{ pitch.description }}</p>
-            <p>Posted by {{user.username}}.</p>
+            <p style="font-family:'Roboto Condensed', sans-serif;">{{ pitch.description }}</p>
+            <p style="font-family:'Roboto Condensed', sans-serif;">Posted by {{user.username}}.</p>
           </a>
         </div>
         {% endfor %}
