@@ -12,5 +12,5 @@ def mail_message(subject,template,to,**kwargs):
   
   email = Messsage(subject, sender = sender_email, recipient = [to])
   email.body = render_template(template + ".text",**kwargs)
-  email.html = render_template(template + ".html",**kwarg)
+  email.html = render_template(template + ".html",**kwargs)
   mail.send(email) 

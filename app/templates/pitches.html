@@ -1,32 +1,23 @@
-
-{% import 'bootstrap/wtf.html' as wtf %}
-{% extends 'bootstrap/base.html' %}
-{% include 'navbar.html'%}
-
-
-
-
-{% block content %}
-<div class="container" >
-	<div class="row">
-		<div class="jumbotron">
-			{{wtf.quick_form(form)}}
-			<ul style="list-style: none;">
-				{% for pitch in pitches %}
-				<div class="list-group" >
-					<a href="#">
-						<div class="list-item">
-							<h2>{{pitch.id}}</h2>
-						</div>
-						<p>{{ pitch.description }}</p>
-						<p> Posted by {{user.username}}.</p>
-					</a>
-				</div>
-				{% endfor %}
-			</ul>
-		</div>
-	</div>
-	</div>
-
-
+{% import 'bootstrap/wtf.html' as wtf %} {% extends 'bootstrap/base.html' %} {%
+include 'navbar.html'%} {% block content %}
+<div class="container">
+  <div class="row">
+    <div class="jumbotron" style="background-color:green;">
+      {{wtf.quick_form(form)}}
+      <ul style="list-style: none;">
+        {% for pitch in pitches %}
+        <div class="list-group">
+          <a href="#">
+            <div class="list-item">
+              <h2>{{pitch.id}}</h2>
+            </div>
+            <p>{{ pitch.description }}</p>
+            <p>Posted by {{user.username}}.</p>
+          </a>
+        </div>
+        {% endfor %}
+      </ul>
+  </div>
+</div>
 {% endblock %}
+

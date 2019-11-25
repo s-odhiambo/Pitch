@@ -1,4 +1,5 @@
 {% macro display(category_list) %}
+
 <div class="row">
 	{% if category_list %}
 	{% for category in category_list %}
@@ -11,13 +12,13 @@
 					<footer> Posted by {{category.user.username}}</footer>
 				</blockquote>
 
-				<a href="{{url_for('main.new_comment',pitch_id = category.id)}}" class="btn btn-success"> Comment</a>
+				<a href="{{url_for('main.new_comment',pitch_id = category.id)}}" class="btn btn-primary"> Comment</a>
 
-				<a href="{{url_for('main.upvote',pitch_id = category.id)}}" class="btn btn-success btn-sm">Upvote
+				<a href="{{url_for('main.upvote',pitch_id = category.id)}}" class="btn btn-success btn-sm"> Upvote
 					<span>{{category.upvotes.count()}}</span>
 				</a>
 
-				<a href="{{url_for('main.downvote',pitch_id = category.id)}}" class="btn btn-success btn-sm">Downvote
+				<a href="{{url_for('main.downvote',pitch_id = category.id)}}" class="btn btn-danger btn-sm"> Downvote
 					<span>{{category.downvotes.count()}}</span></a>
 
 
