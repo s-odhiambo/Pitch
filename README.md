@@ -63,6 +63,6 @@
   
   Send me an email to collaborate on the project.
   
-  # MIT License Copyright (c) 2019 s-odhiambo
+   MIT License Copyright (c) 2019 s-odhiambo
 
   
