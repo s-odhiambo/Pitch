@@ -1,3 +1,4 @@
+
 from . import db
 from . import login_manager
 from flask_login import UserMixin, current_user
